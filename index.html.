@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IMak | A Story You Can Wear</title>
+  <meta name="description" content="IMak is a premium streetwear clothing brand from Kathmandu, Nepal. A Story You Can Wear. Cash on Delivery all over Nepal.">
+  <meta name="theme-color" content="#0d0d0d">
+
+  <!-- Fonts (free Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Accessibility: skip link for keyboard users -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===================== HEADER / NAVIGATION ===================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+
+      <a href="#home" class="logo" aria-label="IMak home">IMak</a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#shop" class="nav-link">Shop</a></li>
+          <li><a href="#collections" class="nav-link">Collections</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Shopping cart button with item count -->
+        <button type="button" class="icon-btn cart-btn" id="cart-toggle" aria-label="Open shopping cart" aria-controls="cart-drawer" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 7h12l-1 13H7L6 7z"></path>
+            <path d="M9 7V6a3 3 0 0 1 6 0v1"></path>
+          </svg>
+          <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+        </button>
+
+        <!-- Mobile hamburger menu button -->
+        <button type="button" class="icon-btn menu-btn" id="menu-toggle" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+
+        <div class="hero-text reveal">
+          <p class="eyebrow">Kathmandu, Nepal &bull; Streetwear</p>
+          <h1 id="hero-title">IMak</h1>
+          <p class="tagline">A Story You Can Wear.</p>
+          <p class="hero-intro">
+            Premium cotton, bold artwork and designs that say something about you.
+            From manga-inspired prints to the classic gangster-era look of The Shelby Era,
+            every piece is made for everyday streetwear with a story behind it.
+          </p>
+          <div class="hero-buttons">
+            <a href="#shop" class="btn btn-primary" id="shop-now-btn">Shop Now</a>
+            <a href="#collections" class="btn btn-outline">View Collections</a>
+          </div>
+          <ul class="hero-points" aria-label="Store highlights">
+            <li>Delivery all over Nepal</li>
+            <li>Cash on Delivery</li>
+            <li>Order on WhatsApp</li>
+          </ul>
+        </div>
+
+        <div class="hero-media reveal">
+          <!-- Exact hero image supplied by the brand owner -->
+          <img src="https://i.ibb.co/rKJYKkdC/file-000000000d3882119e40df88581b9567.png"
+               alt="IMak streetwear hero image - A Story You Can Wear"
+               class="hero-img" id="hero-image">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== INFO MARQUEE STRIP ===================== -->
+    <div class="info-strip" aria-hidden="true">
+      <div class="info-track">
+        <span>A Story You Can Wear</span><span>&bull;</span>
+        <span>Delivery All Over Nepal</span><span>&bull;</span>
+        <span>Cash on Delivery</span><span>&bull;</span>
+        <span>Order on WhatsApp</span><span>&bull;</span>
+        <span>A Story You Can Wear</span><span>&bull;</span>
+        <span>Delivery All Over Nepal</span><span>&bull;</span>
+        <span>Cash on Delivery</span><span>&bull;</span>
+        <span>Order on WhatsApp</span><span>&bull;</span>
+      </div>
+    </div>
+
+    <!-- ===================== COLLECTIONS ===================== -->
+    <section class="section" id="collections" aria-labelledby="collections-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Explore</p>
+          <h2 id="collections-title">Our Collections</h2>
+          <p class="section-sub">Pick a collection to jump straight to its products.</p>
+        </div>
+
+        <div class="collection-grid">
+
+          <!-- Anime Collection -->
+          <a href="#shop" class="collection-card reveal" data-collection="anime" aria-label="View Anime Collection">
+            <img src="https://i.ibb.co/N8k4CXZ/Your-favorite-anime-is-here-Manga-inspired-artwork-Premium-Cotton-Round-Neck-Made-f-heic.jpg"
+                 alt="Anime Collection - manga-inspired artwork on premium cotton" loading="lazy">
+            <div class="collection-overlay">
+              <h3>Anime Collection</h3>
+              <span>Manga-inspired artwork</span>
+            </div>
+          </a>
+
+          <!-- The Shelby Era -->
+          <a href="#shop" class="collection-card reveal" data-collection="shelby" aria-label="View The Shelby Era collection">
+            <img src="https://i.ibb.co/0yYrj6yv/THE-SHELBY-ERA-Classic-gangster-era-aesthetic-reimagined-for-everyday-streetwear-Premium-heic.jpg"
+                 alt="The Shelby Era - classic gangster-era aesthetic for everyday streetwear" loading="lazy">
+            <div class="collection-overlay">
+              <h3>The Shelby Era</h3>
+              <span>Classic gangster-era aesthetic</span>
+            </div>
+          </a>
+
+          <!-- New Arrivals -->
+          <a href="#shop" class="collection-card reveal" data-collection="new" aria-label="View New Arrivals">
+            <img src="https://i.ibb.co/xqT92NmP/order-now-imakstory.jpg"
+                 alt="IMak new arrivals - order now" loading="lazy">
+            <div class="collection-overlay">
+              <h3>New Arrivals</h3>
+              <span>Fresh drops from IMak</span>
+            </div>
+          </a>
+
+          <!-- Best Sellers -->
+          <a href="#shop" class="collection-card reveal" data-collection="best" aria-label="View Best Sellers">
+            <img src="https://i.ibb.co/gbrtyW5h/order-now-delivery-all-over-nepal-imakstory-1.jpg"
+                 alt="IMak best sellers - order now, delivery all over Nepal" loading="lazy">
+            <div class="collection-overlay">
+              <h3>Best Sellers</h3>
+              <span>Store favourites</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SHOP ===================== -->
+    <section class="section section-dark" id="shop" aria-labelledby="shop-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">The Store</p>
+          <h2 id="shop-title">Shop IMak</h2>
+          <p class="section-sub">Choose your size, add to cart, and order on WhatsApp. Cash on Delivery all over Nepal.</p>
+        </div>
+
+        <!-- Filter buttons (created by script.js) -->
+        <div class="filter-bar" id="filter-bar" role="group" aria-label="Filter products by collection"></div>
+
+        <!-- Product cards (created by script.js from the product data) -->
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ===================== PROMO BANNERS ===================== -->
+    <section class="section" id="order-info" aria-labelledby="order-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">How to Order</p>
+          <h2 id="order-title">Order Now. We Deliver All Over Nepal.</h2>
+          <p class="section-sub">Add your favourites to the cart, fill in your delivery details and send your order to us on WhatsApp. You pay in cash when it arrives.</p>
+        </div>
+
+        <div class="promo-grid">
+          <figure class="promo-card reveal">
+            <img src="https://i.ibb.co/qLZChKPd/order-now-delivery-all-over-nepal-imakstory.jpg"
+                 alt="Order now - IMak delivery all over Nepal" loading="lazy">
+          </figure>
+          <figure class="promo-card reveal">
+            <img src="https://i.ibb.co/hJTs9YbW/order-now-delivery-all-over-nepal-imakstory-3.jpg"
+                 alt="Order now on WhatsApp - IMak delivery all over Nepal" loading="lazy">
+          </figure>
+          <figure class="promo-card reveal">
+            <img src="https://i.ibb.co/6cdhqtDr/order-now-delivery-all-over-nepal-imakstory-2.jpg"
+                 alt="IMak streetwear - order now, Cash on Delivery" loading="lazy">
+          </figure>
+        </div>
+
+        <ol class="steps reveal">
+          <li><strong>Choose</strong><span>Pick your design and size.</span></li>
+          <li><strong>Add to cart</strong><span>Review your items and total.</span></li>
+          <li><strong>Send on WhatsApp</strong><span>Your order message is prepared for you. Press Send.</span></li>
+          <li><strong>Pay on delivery</strong><span>Cash on Delivery, all over Nepal.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT US ===================== -->
+    <section class="section section-dark" id="about" aria-labelledby="about-title">
+      <div class="container about-inner">
+        <div class="about-media reveal">
+          <img src="https://i.ibb.co/fV42TqY3/THE-SHELBY-ERA-Classic-gangster-era-aesthetic-reimagined-for-everyday-streetwear-Premium-heic.jpg"
+               alt="IMak The Shelby Era streetwear" loading="lazy">
+        </div>
+        <div class="about-text reveal">
+          <p class="eyebrow">About Us</p>
+          <h2 id="about-title">A Story You Can Wear.</h2>
+          <p>
+            IMak is a clothing brand from Kathmandu, Nepal, built around personal style,
+            creativity and the idea that what you wear should say something about you.
+          </p>
+          <p>
+            We turn stories, art and attitude into everyday streetwear: manga-inspired
+            artwork for anime lovers, and the classic gangster-era look of The Shelby Era
+            reimagined for today. Every design is made to be worn, shared and remembered.
+          </p>
+          <p class="about-quote">Wear your story. Make it yours.</p>
+          <a href="#shop" class="btn btn-primary">Explore the Collection</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Get in Touch</p>
+          <h2 id="contact-title">Contact IMak</h2>
+          <p class="section-sub">Questions about sizes, designs or your order? Message us anytime.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <a class="contact-card reveal" href="https://wa.me/9779767258429" target="_blank" rel="noopener">
+            <span class="contact-label">WhatsApp</span>
+            <span class="contact-value">+977 9767258429</span>
+          </a>
+
+          <a class="contact-card reveal" href="https://instagram.com/imak_story" target="_blank" rel="noopener">
+            <span class="contact-label">Instagram</span>
+            <span class="contact-value">@imak_story</span>
+          </a>
+
+          <a class="contact-card reveal" href="mailto:itzsubham86@gmail.com">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">itzsubham86@gmail.com</span>
+          </a>
+
+          <div class="contact-card reveal">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Kathmandu, Nepal</span>
+            <span class="contact-note">Delivery available all over Nepal.</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">IMak</span>
+        <p>A Story You Can Wear.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="footer-copy">&copy; <span id="year">2026</span> IMak. Kathmandu, Nepal. Cash on Delivery all over Nepal.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp chat button -->
+  <a href="https://wa.me/9779767258429" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with IMak on WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+      <path d="M12.04 2a9.9 9.9 0 0 0-8.4 15.1L2 22l5-1.6A9.9 9.9 0 1 0 12.04 2zm0 18.1a8.1 8.1 0 0 1-4.13-1.13l-.3-.18-2.97.95.97-2.89-.2-.3a8.1 8.1 0 1 1 6.63 3.55zm4.45-6.06c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.8-.2-.47-.4-.41-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.1.16 1.52.1.46-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/>
+    </svg>
+  </a>
+
+  <!-- ===================== OVERLAY (behind cart / modals) ===================== -->
+  <div class="overlay" id="overlay" hidden></div>
+
+  <!-- ===================== CART DRAWER ===================== -->
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true" tabindex="-1">
+    <div class="drawer-head">
+      <h2>Your Cart</h2>
+      <button type="button" class="icon-btn" id="cart-close" aria-label="Close cart">&times;</button>
+    </div>
+
+    <!-- Cart items (created by script.js) -->
+    <div class="cart-items" id="cart-items"></div>
+
+    <div class="cart-footer" id="cart-footer">
+      <div class="cart-row">
+        <span>Subtotal</span>
+        <span id="cart-subtotal">रु 0</span>
+      </div>
+      <div class="cart-row cart-total">
+        <span>Total</span>
+        <span id="cart-total">रु 0</span>
+      </div>
+      <p class="cart-note">Payment: Cash on Delivery. Delivery all over Nepal.</p>
+      <button type="button" class="btn btn-primary btn-block" id="checkout-btn">Proceed to Checkout</button>
+      <button type="button" class="btn-link" id="clear-cart-btn">Clear cart</button>
+    </div>
+  </aside>
+
+  <!-- ===================== QUICK VIEW MODAL ===================== -->
+  <div class="modal" id="quickview-modal" role="dialog" aria-modal="true" aria-labelledby="quickview-title" aria-hidden="true">
+    <div class="modal-box modal-wide">
+      <button type="button" class="modal-close" id="quickview-close" aria-label="Close product details">&times;</button>
+      <!-- Content created by script.js -->
+      <div class="quickview-content" id="quickview-content"></div>
+    </div>
+  </div>
+
+  <!-- ===================== CHECKOUT MODAL ===================== -->
+  <div class="modal" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title" aria-hidden="true">
+    <div class="modal-box">
+      <button type="button" class="modal-close" id="checkout-close" aria-label="Close checkout">&times;</button>
+
+      <h2 id="checkout-title">Checkout</h2>
+      <p class="modal-sub">Fill in your details. We will open WhatsApp with your order ready to send.</p>
+
+      <form id="checkout-form" novalidate>
+
+        <div class="form-group">
+          <label for="customer-name">Full name</label>
+          <input type="text" id="customer-name" name="name" autocomplete="name" placeholder="Your full name" required>
+          <small class="field-error" id="name-error" role="alert"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="customer-phone">Phone number</label>
+          <input type="tel" id="customer-phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="98XXXXXXXX" required>
+          <small class="field-error" id="phone-error" role="alert"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="customer-address">Full delivery address</label>
+          <textarea id="customer-address" name="address" rows="3" autocomplete="street-address" placeholder="Area, street, landmark, city / district" required></textarea>
+          <small class="field-error" id="address-error" role="alert"></small>
+        </div>
+
+        <!-- Order summary (created by script.js) -->
+        <div class="order-summary">
+          <h3>Order summary</h3>
+          <div id="checkout-summary"></div>
+          <div class="cart-row cart-total">
+            <span>Total</span>
+            <span id="checkout-total">रु 0</span>
+          </div>
+        </div>
+
+        <!-- Payment method: Cash on Delivery only -->
+        <fieldset class="payment-box">
+          <legend>Payment method</legend>
+          <label class="payment-option">
+            <input type="radio" name="payment" value="Cash on Delivery" checked>
+            <span>Cash on Delivery (COD)</span>
+          </label>
+        </fieldset>
+
+        <p class="whatsapp-note">
+          After you click the button below, WhatsApp will open with your order message.
+          <strong>You must press Send in WhatsApp to place your order.</strong>
+          Orders are not sent automatically.
+        </p>
+
+        <button type="submit" class="btn btn-whatsapp btn-block" id="place-order-btn">Place Order on WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast notification (aria-live for screen readers) -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
+</body>
+</html>
